@@ -11,3 +11,5 @@ SELECT
 FROM `project1-448917.bank_churn.churn_analysis`
 GROUP BY Balance_Group
 ORDER BY churn_rate DESC
+
+
