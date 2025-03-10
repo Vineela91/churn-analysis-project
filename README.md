@@ -1,4 +1,4 @@
-## 📊 Churn Analysis Project 🚀
+## 📊 Banking Churn Analysis 🚀
 
 This project analyzes customer churn using **BigQuery, dbt, and Looker Studio**.
 
