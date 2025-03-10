@@ -1,13 +1,33 @@
 version: 2
 
 models:
-  - name: churn_analysis
+  - name: cleansed_data
     description: "A model to classify customers as Churned or Retained"
+    config:
+      materialized: table
+  
+  - name: churn_analysis
+    description: "final churn analysis"
     config:
       materialized: table
 
   - name: churn_by_geo_gender
     description: "Analysis of churn based on Geography and Gender"
+    config:
+      materialized: table
+  
+  - name: churn_by_age
+    description: "Analysis of churn based on Age"
+    config:
+      materialized: table
+  
+  - name: churn_by_balance
+    description: "Analysis of churn based on Balance"
+    config:
+      materialized: table
+
+  - name: churn_by_activity
+    description: "Analysis of churn based on Activity"
     config:
       materialized: table
 
@@ -16,26 +36,7 @@ models:
     config:
       materialized: table
 
-
-  - name: churn_by_age
-    description: "Analysis of churn based on Age"
-    config:
-      materialized: table
-
-
-  - name: churn_by_balance
-    description: "Analysis of churn based on Balance"
-    config:
-      materialized: table
-
-
-
-  - name: churn_by_activity
-    description: "Analysis of churn based on Activity"
-    config:
-      materialized: table
-  
-  - name: final_churn_analysis
+  - name: churned_customers
     description: "final churn analysis"
     config:
       materialized: table
